@@ -1,0 +1,1 @@
+npm start -> to start nodemon at localhost:3000
