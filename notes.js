@@ -18,7 +18,7 @@ const user = JSON.parse(localStorage.getItem('user'))
 // if(!user.token || !user){
 //   window.location= "/login"
 // }
-const notes = postData('/getnotes', {token: user.token})
+//const notes = postData('/getnotes', {token: user.token})
 
 //This will populate the notes
 notes.then((notes)=>{
