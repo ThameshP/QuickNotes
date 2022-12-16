@@ -21,14 +21,14 @@ const user = JSON.parse(localStorage.getItem('user'))
 //const notes = postData('/getnotes', {token: user.token})
 
 //This will populate the notes
-notes.then((notes)=>{
-  console.log("Notes")
-})
+// notes.then((notes)=>{
+//   console.log("Notes")
+// })
 
 //Add a click listener for submit
-let submit = document.getElementbyID("submit")
+let submit = document.getElementById('submit')
 submit.addEventListener("click", ()=> {
-  let title = document.getElementbyID("title")
-  let desc = document.getElementbyID("desc")
+  let title = (document.getElementById('title').value)
+  let desc = (document.getElementById('desc').value)
   console.log("Submitting this data", title, desc)
 })
