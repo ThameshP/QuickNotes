@@ -31,4 +31,5 @@ submit.addEventListener("click", ()=> {
   let title = (document.getElementById('title').value)
   let desc = (document.getElementById('desc').value)
   console.log("Submitting this data", title, desc)
+
 })
