@@ -58,8 +58,6 @@ app.post('/addnotes', async (req, res) => {
 
 app.post('/deletenotes', async (req, res) => {
   const {userToken } = req.body
-  await db.collection('inventory').deleteOne({ status: 'D' });
-
   res.sendFile("/signup.html", {root: __dirname})
 })
 
