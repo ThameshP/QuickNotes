@@ -46,7 +46,19 @@
     </div>
   </nav>
   <!-- Navbar -->
-  <div style="margin: 30px"> <!-- Form -->
+
+  <!-- Jumbotron -->
+  <div class="jumbotron" style="margin: 20px;">
+    <h1 class="display-4">Log in!</h1>
+    <p class="lead">Log in here using your email address and password!</p>
+    <hr class="my-4">
+    <!--<a class="btn btn-primary btn-lg" data-toggle="modal" href="#" role="button">Add Notes!</a>
+    -->
+  </div>
+  <!-- Jumbotron -->
+
+
+  <div style="margin: 4px"> <!-- Form -->
   <div class="form-group" style="margin: 15px" >
     <label for="email">Email address</label>
     <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
@@ -88,16 +100,26 @@
         //Making values blank after creation
         document.getElementById('email').value = ""
         document.getElementById('pass').value = ""
+        window.location= "/"
+        // let userShowS = `
+        // <h1>${element.user} </h1>`
+        // let userContainer = document.querySelector(".userShow")
+        // userContainer.innerHTML += userShowS
+
+
       }
 
 
     })
 
 
-
+//TODO: If user is logged in, we will remove the login and sign up buttons, and replace it with
+// with sign out by clearing the local storage.
 
 
   </script>
+
+
 
 
   </body>
